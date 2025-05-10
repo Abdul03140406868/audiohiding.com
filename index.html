@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Hider & Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔊🎨 Audio Hider & Scanner</h1>
+        
+        <div class="section">
+            <h2>Hide Audio in Image</h2>
+            <div class="file-upload">
+                <label for="imageInput">Select Image (PNG works best):</label>
+                <input type="file" id="imageInput" accept="image/png,image/jpeg">
+            </div>
+            <div class="file-upload">
+                <label for="audioInput">Select MP3 Audio:</label>
+                <input type="file" id="audioInput" accept="audio/mp3">
+            </div>
+            <button id="encodeBtn">Encode & Download</button>
+            <div id="encodeStatus" class="status hidden"></div>
+        </div>
+
+        <div class="section">
+            <h2>Scan Image for Hidden Audio</h2>
+            <div class="file-upload">
+                <label for="scannedImage">Upload Image:</label>
+                <input type="file" id="scannedImage" accept="image/png,image/jpeg">
+            </div>
+            <button id="decodeBtn">Scan Image</button>
+            <div id="decodeStatus" class="status hidden"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
